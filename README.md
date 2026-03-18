@@ -5,6 +5,12 @@
 ## Experiment 1 — Text Preprocessing
 **Cell:** 2
 
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
+nltk.download('wordnet')
 Core NLP preprocessing pipeline applied to 3 sample datasets. Covers sentence segmentation, word tokenization, stopword removal, stemming (Porter Stemmer), and lemmatization (WordNet). Includes a side-by-side comparison of original vs stemmed vs lemmatized tokens.
 
 **TL;DR:** `sent_tokenize` · `word_tokenize` · `stopwords.words()` · `PorterStemmer().stem()` · `WordNetLemmatizer().lemmatize()`
